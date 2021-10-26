@@ -11,7 +11,8 @@ const Home = () => {
          .then(data =>{
              setBlogs(data)
          })
-   })
+         console.log('use effect ran')
+   }, [])
     return ( 
     <div ClassName="home">
         {blogs && blogs.map((blog) => (
